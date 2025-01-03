@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    outline: none;
+  }
+
+  header {
+    background-color: rgb(45, 44, 46);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  
+  body {
+    height: 100vh;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*height: 100%;*/
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(57, 3, 252));
+  }
+  
+  main {
+    background-color: aliceblue;
+    max-width: 1200px;
+    /*width: 100%;
+    display: flex;*/
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .resume {
+    display: flex;
+    padding: 10px 0;
+    gap: 40px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .resume > div {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+  }
+  .newdata {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .divdata, .divType, .divAmount {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .newdata > button {
+    background-color: #2C73D2;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 34px;
+  }
+  
+  .newItem {
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .divDesc, .divType, .divAmount {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .newItem > button {
+    background-color: #2C73D2;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 34px;
+  }
+  
+  input, select {
+    padding: 5px;
+  }
+  
+  .divTable {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  table {
+    width: 98%;
+    padding: 20px 0;
+    border-radius: 5px;
+  }
+  
+  th {
+    text-align: start;
+    border-bottom: inset;
+    padding-bottom: 5px;
+  }
+  
+  i {
+    font-size: 25px;
+  }
+  
+  .bxs-chevron-up-circle {
+    color: #00C9A7;
+  }
+  
+  .bxs-chevron-down-circle {
+    color: #D83121;
+  }
+  
+  .columnAction {
+    width: 40px;
+    text-align: center;
+  }
+  
+  .columnAction > button {
+    background: transparent;
+    border: none;
+  }
+  
+  .columnAmount {
+    width: 30%;
+  }
+  
+  .columnType {
+    width: 80px;
+    text-align: center;
+  }
+
+  /* Adicionar no final do arquivo style.css */
+
+@media (max-width: 768px) {
+  header {
+      padding: 5px;
+      margin: 5px;
+  }
+
+  .resume {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+  }
+
+  .resume > div {
+      width: 80%;
+      margin-bottom: 10px;
+  }
+
+  .newItem {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .divdata, .divDesc, .divAmount, .divType {
+      width: 80%;
+  }
+
+  .newItem > button {
+      width: 80%;
+      margin-top: 10px;
+  }
+
+  table {
+      width: 100%;
+  }
+
+  th, td {
+      font-size: 14px;
+  }
+
+  .columnAmount, .columnType, .columnAction {
+      width: auto;
+  }
+}
